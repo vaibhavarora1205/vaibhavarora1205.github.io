@@ -148,8 +148,8 @@ span{
 
 .herosection{
     background-image: url(https://m.media-amazon.com/images/I/81mLoEvjbEL._SX3000_.jpg);
-    height: 40vw;
-    background-size:cover;
+    height: 32vw;
+    background-size: cover;
     background-position: center;
 }
 
