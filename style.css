@@ -341,9 +341,46 @@ ul a{
     padding: 6px 0;
     cursor: pointer;
 }
-
+.hamburger{
+    display: none;
+}
 
 .lang-selector:hover .lang-dropdown{
     display: block;
 }
+@media (max-width: 768px) {
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 8px 10px;
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .logo{
+        margin-left: 5px;
+    }
+    .action {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .navsearch {
+        width: 100%;
+        order: 3;
+        margin-top: 8px;
+    }
+    .lang-btn{
+        display: none;
+    }
+}
+
 
