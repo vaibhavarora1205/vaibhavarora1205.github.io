@@ -12,7 +12,7 @@ body{
 }
 .navbar{
     height: 3rem;
-    background-color: #014837;
+    background-color: #131921;
     color: white;
     display: flex;
     align-items: center;
@@ -94,10 +94,10 @@ body{
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
-    background-color: #7f1153;
+    background-color: #f3a847;
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
-    color: white;
+    color: black;
     flex-shrink: 2;
 }
 
@@ -134,7 +134,7 @@ span{
 
 .panel{
     height: 40px;
-    background-color: #085749;
+    background-color: #232f3e;
     display: flex;
     color: white;
     align-items: center;
@@ -161,8 +161,9 @@ span{
 
 
 .herosection{
-    background-image: url(https://m.media-amazon.com/images/I/81mLoEvjbEL._SX3000_.jpg);
+    background-image: url(https://m.media-amazon.com/images/I/71GGl3UpyOL._SX3000_.jpg);
     height: 32vw;
+    background-position: 5rem;
     background-size: cover;
     background-position: center;
 }
@@ -348,6 +349,51 @@ ul a{
 .lang-selector:hover .lang-dropdown{
     display: block;
 }
+
+ .upperbar{
+    display: flex;
+    align-items: flex-end;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        height: 25%;
+        color: #e2e7e6;
+        background-color: #232f3e
+    }
+    .bars{
+        display: block;
+        box-sizing: border-box;
+        padding: 10px;
+        background-color: white;
+        color: #0f1111;
+        align-items: center;
+        margin-bottom: 10px;
+        font-size: smaller;
+    }
+    .bars h2{
+        color:#37475a;
+    }
+   .hambar{
+    position: fixed;
+    top: 48px;
+    left: 0;
+    width: 70vw;
+    height: 100vh;
+    background-color: #cccccc;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 999;
+}
+
+.hamburger:hover + .hambar{
+    visibility: visible;
+    opacity: 1;
+}
+.hambar:hover{
+    visibility: visible;
+    opacity: 1;
+}
+
+
 @media (max-width: 768px) {
 
     .navbar {
@@ -365,14 +411,29 @@ ul a{
         cursor: pointer;
     }
     .logo{
+        display: flex;
         margin-left: 5px;
+    }
+    .navbar{
+        display: flex;
+        justify-content: flex-start;
     }
     .action {
         display: flex;
+        justify-content: flex-end;
         align-items: center;
-        gap: 10px;
+         gap: 10px;
+         margin-left: auto;
     }
-
+    .navaddress{
+        display: none;
+    }
+    .return{
+        display: none;
+    }
+    .account{
+        margin-left: 10px;
+    }
     .navsearch {
         width: 100%;
         order: 3;
@@ -381,6 +442,7 @@ ul a{
     .lang-btn{
         display: none;
     }
+    
 }
 
 
