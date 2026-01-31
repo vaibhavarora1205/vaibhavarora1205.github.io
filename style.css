@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+html{
+    width: 100vw;
+}
 .disclaimer{
     background-color: black;
     color: red;
@@ -415,6 +418,9 @@ ul a{
 
 @media (max-width: 768px) {
 
+    .herosection span{
+        display: none;
+    }
     .navbar {
         display: flex;
         align-items: center;
@@ -423,7 +429,10 @@ ul a{
         height: auto;
         flex-wrap: wrap;
     }
-
+    /* .box{
+        height: 380px;
+        width: 45vw;
+    } */
     .hamburger {
         display: block;
         font-size: 22px;
