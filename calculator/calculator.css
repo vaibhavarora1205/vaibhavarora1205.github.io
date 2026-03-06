@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f2225;
+    width: 100%;
+}
+.container{
+    border: 1px solid;
+    min-height: 500px;
+    display: grid;
+    width: 300px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 10px 12px 15px;
+    color: gray;
+    background-color: #252d33;
+    border: none;
+    border-radius: 7px;
+    box-shadow: 3px 3px 20px black;
+}
+.display{
+    grid-column: span 4;
+    height: 100px;
+    background-color: rgb(73, 73, 73);
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 95%;
+    padding: 10px;
+    font-size: 2rem;
+    color: rgb(204, 203, 203);
+    overflow: hidden;
+}
+.btn{
+    background-color: #1f2225;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    box-shadow: 0 0 7px rgb(169, 168, 168);
+    height: 60px;
+    width: 60px;
+    font-weight: 700;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: opacity 0.2s ease, transform 0.1s ease;
+}
+.btn:active{
+    box-shadow: none;
+    transform: scale(0.95);
+}
+.active{
+    box-shadow: none;
+    transform: scale(0.95);
+}
+.btn:hover{
+    opacity: 70%;
+
+}
+#sub{
+    font-size: 2rem;
+    font-weight: 400;
+}
+.equal{
+    grid-column: span 2;
+    align-self: center;
+    border-radius: 20px;
+    width: 130px;
+    height: 55px;
+    justify-self: center;
+    background-color: #fc7b14;
+    font-weight: 400;
+    font-size: 25px;
+}
+.coloroptions{
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+}
+h3{
+    color: aliceblue;
+}
+.colours{
+    height: 30px;
+    width: 30px;
+    border: 1px solid white;
+    margin: 10px;
+    border-radius: 50%;
+    padding: 2px;
+    text-align: center;
+    align-content: center;
+    font-weight: 700;
+}
+/* #white{
+    background-color: white;
+}
+#pink{
+    background-color: #ffdcd7;
+}
+#blue{
+    background-color: #add6ff;
+}
+#white{
+    background-color: white;
+} */
+.whitebg{
+    background-color: white;
+}
+.greybtn{
+    background-color:darkgrey;
+    color: #1f2225;
+}
+.pinkbg{
+    background-color: #ffdcd7;
+}
+.whitebtn{
+    background-color:white;
+    color: #1f2225;
+}
+.bluebg{
+    background-color: #add6ff;
+}
+.whitebtn{
+    background-color:white;
+    color: #1f2225;
+}
